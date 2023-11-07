@@ -1,14 +1,12 @@
 package code.arrays;
 
 import java.util.HashMap;
-import java.util.HashSet;
 import java.util.Map;
-import java.util.Set;
 
 
 public class LongestSubstringWithoutRepeatingCharacters {
   public static void main(String[] args) {
-    String str = "abcfaklaqw";
+    String str = "abba";
     System.out.println("The length of the longest substring without repeating characters is : "+ lengthOfLongestSubstring(str));
   }
 
@@ -19,7 +17,7 @@ public class LongestSubstringWithoutRepeatingCharacters {
     Map<Character,Integer> characterSet = new HashMap<>();
     for(int i=0; i<s.length(); i++) {
       if (characterSet.containsKey(s.charAt(i))) {
-        startIndex = characterSet.get(s.charAt(i)) + 1;
+        startIndex = Math.max(startIndex,characterSet.get(s.charAt(i)) + 1);
       }
       characterSet.put(s.charAt(i),i);
       if ( ( i + 1 ) - startIndex > longest ) {
