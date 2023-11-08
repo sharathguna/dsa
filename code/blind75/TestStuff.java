@@ -1,4 +1,4 @@
-package code.arrays;
+package code.blind75;
 
 public class TestStuff {
   public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package code.arrays;
+package code.blind75;
 
 public class RemoveNthNodeFromEnd {
   public static void main(String[] args) {

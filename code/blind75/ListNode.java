@@ -1,4 +1,4 @@
-package code.arrays;
+package code.blind75;
 
 public class ListNode {
   int val;
