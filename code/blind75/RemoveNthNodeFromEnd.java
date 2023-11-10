@@ -1,5 +1,8 @@
 package code.blind75;
 
+import code.blind75.utils.ListNode;
+
+
 public class RemoveNthNodeFromEnd {
   public static void main(String[] args) {
     ListNode head = new ListNode(1);

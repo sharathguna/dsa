@@ -1,13 +1,13 @@
-package code.blind75;
+package code.blind75.utils;
 
 public class ListNode {
-  int val;
-  ListNode next;
+  public int val;
+  public ListNode next;
 
-  ListNode() {
+  public ListNode() {
   }
 
-  ListNode(int val) {
+  public ListNode(int val) {
     this.val = val;
   }
 
