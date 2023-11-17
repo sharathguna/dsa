@@ -2,7 +2,7 @@ package code.blind75;
 
 public class ClimbingStairs {
   public static void main(String[] args){
-    int steps = 100;
+    int steps = 10;
     System.out.println("The number of distinct ways to climb " +steps+ " are "+ climbStairs(steps));
   }
   static int climbStairs(int n) {
@@ -10,7 +10,7 @@ public class ClimbingStairs {
     return climbStairsHelper(n,memo);
   }
   static int climbStairsHelper(int n, int[] memo) {
-    if (n==1) return 1;
+    if (n == 1) return 1;
     if (n == 2) return 2;
     if (memo[n] != 0)
       return memo[n];
