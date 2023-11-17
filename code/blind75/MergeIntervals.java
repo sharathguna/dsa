@@ -23,7 +23,7 @@ public class MergeIntervals {
     System.out.println(Arrays.deepToString(merge(arr4)));
 
   }
-  public static int[][] merge(int[][] intervals) {
+  private static int[][] merge(int[][] intervals) {
     Arrays.sort(intervals, Comparator.comparing( o->o[0]));
     if (intervals.length == 1) return intervals;
     ArrayList<int[]> resultList = new ArrayList<>();
