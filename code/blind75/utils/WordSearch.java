@@ -5,7 +5,7 @@ public class WordSearch {
     char[][] matrix = {{'A','B','C','E'},{'S','F','C','S'},{'A','D','E','E'}};
     String[] words = {"SEE","ABCCED","ABCD"};
     for (String word : words) {
-      System.out.println(" The word " + word + " existing in the matrix below is : " + exist(matrix, word));
+      System.out.println("The word " + word + " existing in the matrix below is : " + exist(matrix, word));
     }
     for (char[] chars : matrix) {
       for(char ch : chars) {
