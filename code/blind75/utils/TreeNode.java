@@ -17,9 +17,7 @@ public class TreeNode {
    }
 
   public void printTree(TreeNode root) {
-    if (root == null) {
-      System.out.println("null");
-    }
+    if (root == null) return;
     Queue<TreeNode> queue = new LinkedList<>();
     queue.add(root);
     while (!queue.isEmpty()) {
