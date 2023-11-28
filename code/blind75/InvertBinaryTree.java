@@ -39,5 +39,6 @@ public class InvertBinaryTree {
       if (node.right != null) queue.add(node.right);
       System.out.print(node.val + " , ");
     }
+    System.out.println();
   }
 }
