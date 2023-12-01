@@ -1,4 +1,4 @@
-package code.blind75;
+package code.blind75.utils;
 
 public class TestStuff {
   public static void main(String[] args) {
