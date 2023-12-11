@@ -7,11 +7,11 @@ import java.util.List;
 
 public class CombinationSum {
   public static void main(String[] args) {
-  int[] candidates = {2,3,6,7};
-  int target = 8;
-    System.out.println("The different combinations to form sum "+ target +" from  "+ Arrays.toString(candidates)+ " are :");
-    List<List<Integer>> result = combinationSum(candidates, target);
-    result.forEach(System.out::println);
+    int[] candidates = {1,2,3};
+    int target = 4;
+      System.out.println("The different combinations to form sum "+ target +" from  "+ Arrays.toString(candidates)+ " are :");
+      List<List<Integer>> result = combinationSum(candidates, target);
+      result.forEach(System.out::println);
   }
   static List<List<Integer>> combinationSum(int[] candidates, int target) {
     Arrays.sort(candidates);
@@ -20,11 +20,10 @@ public class CombinationSum {
     return result;
   }
   private static void findCombinations(int[] array, int target,int start,List<List<Integer>> result,List<Integer> tempResult) {
-    if (target < 0) {
-    } else if (target == 0) {
+    if (target == 0) {
       result.add(new ArrayList<>(tempResult));
     }
-    else {
+    else if (target > 0){
       for (int i = start;i<array.length;i++) {
         tempResult.add(array[i]);
         findCombinations(array,target-array[i],i,result,tempResult);
