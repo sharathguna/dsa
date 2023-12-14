@@ -1,4 +1,4 @@
-package code.blind75.utils;
+package code.utils;
 
 import java.util.Arrays;
 import java.util.Comparator;

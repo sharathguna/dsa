@@ -1,4 +1,4 @@
-package code.blind75.utils;
+package code.utils;
 
 import java.util.ArrayList;
 import java.util.List;

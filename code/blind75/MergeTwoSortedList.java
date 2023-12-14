@@ -1,6 +1,6 @@
 package code.blind75;
 
-import code.blind75.utils.ListNode;
+import code.utils.ListNode;
 
 
 public class MergeTwoSortedList {

@@ -1,6 +1,6 @@
 package code.blind75;
 
-import code.blind75.utils.TreeNode;
+import code.utils.TreeNode;
 
 
 public class SameTree {

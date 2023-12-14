@@ -1,7 +1,7 @@
 package code.blind75;
 
-import code.blind75.utils.Graph;
-import code.blind75.utils.Node;
+import code.utils.Graph;
+import code.utils.Node;
 import java.util.ArrayList;
 import java.util.HashMap;
 import java.util.Map;
