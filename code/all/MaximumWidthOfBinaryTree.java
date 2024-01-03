@@ -35,7 +35,7 @@ public class MaximumWidthOfBinaryTree {
     }
     return maxWidth;
   }
-  static class Pair<T,S> {
+  public static class Pair<T,S> {
     T t;
     S s;
 
@@ -44,10 +44,10 @@ public class MaximumWidthOfBinaryTree {
       this.s = s;
     }
 
-    T getKey() {
+    public T getKey() {
       return t;
     }
-    S getValue() {
+    public S getValue() {
       return s;
     }
   }
