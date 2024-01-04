@@ -1,4 +1,7 @@
-package code.utils;
+package code.blind75;
+
+import code.utils.TreeNode;
+
 
 public class BinaryTreeMaximumPathSum {
   static int maxPathSumVal;

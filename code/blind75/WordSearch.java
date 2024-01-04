@@ -1,4 +1,4 @@
-package code.utils;
+package code.blind75;
 
 public class WordSearch {
   public static void main(String[] a) {
