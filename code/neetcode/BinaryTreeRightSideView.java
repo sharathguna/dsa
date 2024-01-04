@@ -1,4 +1,4 @@
-package code.all;
+package code.neetcode;
 
 import code.utils.TreeNode;
 import java.util.ArrayList;

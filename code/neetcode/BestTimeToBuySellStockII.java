@@ -1,7 +1,6 @@
-package code.all;
+package code.neetcode;
 
 import java.util.Arrays;
-import java.util.Map;
 
 
 public class BestTimeToBuySellStockII {

@@ -1,7 +1,6 @@
 package code.blind75;
 
-import code.all.MaximumWidthOfBinaryTree;
-import code.all.MaximumWidthOfBinaryTree.Pair;
+import code.neetcode.MaximumWidthOfBinaryTree.Pair;
 import java.util.LinkedList;
 import java.util.Queue;
 
