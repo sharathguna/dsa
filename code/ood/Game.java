@@ -154,15 +154,15 @@ class Game {
   private void printBoard() {
     System.out.println("Board:");
     int[][] grid = this.grid.getGrid();
-    for (int i = 0; i < grid.length; i++) {
-      String row = "";
-      for (int piece : grid[i]) {
+    for (int[] ints : grid) {
+      StringBuilder row = new StringBuilder();
+      for (int piece : ints) {
         if (piece == GridPosition.EMPTY.ordinal()) {
-          row += "0 ";
+          row.append("0 ");
         } else if (piece == GridPosition.YELLOW.ordinal()) {
-          row += "Y ";
+          row.append("Y ");
         } else if (piece == GridPosition.RED.ordinal()) {
-          row += "R ";
+          row.append("R ");
         }
       }
       System.out.println(row);
