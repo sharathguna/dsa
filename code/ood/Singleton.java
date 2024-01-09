@@ -28,7 +28,6 @@ class PrinterService {
   public void setMode(String mode) {
     this.mode = mode;
     System.out.println("Mode changed to " + mode);
-    System.out.println(this);
   }
 }
 
@@ -44,7 +43,7 @@ class Client {
     String worker1Mode = worker1.getPrinterStatus();
     String worker2Mode = worker2.getPrinterStatus();
 
-    System.out.println(worker1Mode);
-    System.out.println(worker2Mode);
+    System.out.println(worker1 + " " + worker1Mode);
+    System.out.println(worker2 + " " + worker2Mode);
   }
 }
