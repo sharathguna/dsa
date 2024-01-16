@@ -12,6 +12,7 @@ import java.util.Set;
 import java.util.function.Function;
 import java.util.function.Predicate;
 import java.util.stream.Collectors;
+import java.util.stream.IntStream;
 
 
 public class Stream {
@@ -90,6 +91,14 @@ public class Stream {
         Map.Entry::getKey).collect(Collectors.toSet());
 
     duplicatedLastNames.forEach(System.out::println);
+    System.out.println("---------------------------");
+    String value = "this is a duplicated values containing string";
+    System.out.println(value.chars().distinct().mapToObj(ch -> (char)ch).map(Object::toString).collect(Collectors.joining()));
 
-  }
+    System.out.println("---------------------------");
+    value.chars().mapToObj(ch->(char)ch).peek(System.out::print).map(Object::toString).collect(Collectors.toList());
+    System.out.println(value.chars().peek(ch -> System.out.println((char)ch)).count());
+
+    System.out.println(IntStream.of(1,3,5,9,7).reduce(100, Integer::sum));
+    }
 }
