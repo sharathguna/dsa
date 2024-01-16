@@ -1,4 +1,4 @@
-package code.designpattern;
+package code.designpattern.creational;
 
 import java.util.ArrayList;
 // Factory Pattern
